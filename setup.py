@@ -9,6 +9,7 @@ def get_requirements(filepath:str)->List[str]:
         requirements=[req.replace("\n","") for req in requirements]
         if HYPEN_E_DOT in requirement:
             requirement.remove(HYPEN_E_DOT)
+    return requirement
 setup(
     name='mlprject',
     packages=find_packages(),
